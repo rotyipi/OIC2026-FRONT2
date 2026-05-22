@@ -1,11 +1,6 @@
-function outFunc(){
-    function getCat(catName){
-        const res=`猫名：「${catName}」`;
-        return res;
-    }
-
-    console.log(getCat("タマ"));
+function getCat(catName,age,sex){
+    const res=`猫名：「${catName}」、年齢${age}、性別${sex}`;
+    return res;
 }
 
-outFunc();
-console.log(getCat("大福"));
+console.log(getCat("タマ",3))
