@@ -1,10 +1,7 @@
-const animal={
-    cat:{name:"タマ",age:3,color:"black"},
-    dog:{name:"ポチ",age:4,color:"white"}
-};
+const name="タマ";
+const age=3;
 
-console.log(animal.cat.name);
-console.log(animal["cat"]["age"]);
+const cat={name,age};
 
-console.log(animal["dog"].color);
-console.log(animal.dog["color"])
+console.log(cat.name);
+console.log(cat.age);
