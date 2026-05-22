@@ -1,7 +1,11 @@
-let a=30;
-console.log(a);
-a="abc";
-console.log(a);
+//P63
+console.log("start");
 
-let b=40;
-console.log(b);
+{
+    let item="チョコレート"
+    console.log(item);
+    {
+        console.log(item)
+    }
+}
+console.log("end")
