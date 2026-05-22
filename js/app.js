@@ -1,8 +1,9 @@
-function getCat(catName){
-    return;
-
-    const res=`猫名：「${catName}」`
-    return res;
+function growOldCat(cat){
+    cat.age=cat.age+1;
 }
 
-console.log(getCat("タマ"));
+const catObj={name:"タマ",age:3}
+console.log(`${catObj.name}${catObj.age}歳`)
+
+growOldCat(catObj)
+console.log(`${catObj.name}${catObj.age}歳`)
