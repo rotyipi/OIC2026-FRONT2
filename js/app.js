@@ -1,9 +1,13 @@
-function growOldCat(cat){
-    cat.age=cat.age+1;
+function fnc1(){
+    console.log("中",this);
+
+    function fnc2(){
+        console.log("内",this);
+    }
+
+    fnc2();
 }
 
-const catObj={name:"タマ",age:3}
-console.log(`${catObj.name}${catObj.age}歳`)
+console.log("外",this);
 
-growOldCat(catObj)
-console.log(`${catObj.name}${catObj.age}歳`)
+fnc1;
