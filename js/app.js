@@ -1,9 +1,6 @@
-const text='{items:[{"name":"cat","dog","age":3},{"name":"dog","age":4}]}';
-
-let res=null;
-try{
-    res=JSON.parse(text);
-}catch(e){
+function getCat(catName){
+    const res=`猫名：「${catName}」`;
+    return res;
 }
 
-console.log(res);
+console.log(getCat("タマ"));
