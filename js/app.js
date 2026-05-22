@@ -1,3 +1,5 @@
+"use strict"
+
 function fnc1(){
     console.log("中",this);
 
