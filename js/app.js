@@ -1,6 +1,9 @@
-const animals={items:[
-    {name:"cat",age:3},
-    {name:"dog",age:4}
-]}
+const text='{items:[{"name":"cat","dog","age":3},{"name":"dog","age":4}]}';
 
-console.log(JSON.stringify(animals,null,"\t"));
+let res=null;
+try{
+    res=JSON.parse(text);
+}catch(e){
+}
+
+console.log(res);
