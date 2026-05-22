@@ -1,15 +1,14 @@
-"use strict"
+const obj ={
+    fnc:function(){
+        console.log("中",this);
 
-function fnc1(){
-    console.log("中",this);
-
-    function fnc2(){
-        console.log("内",this);
+        function fnc2(){
+            console.log("内",this);
+        }
+        fnc2
     }
-
-    fnc2();
-}
+};
 
 console.log("外",this);
 
-fnc1;
+obj.fnc();
